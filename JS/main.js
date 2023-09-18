@@ -5,6 +5,11 @@ let notFound = document.querySelector(".not-found")
 let weatherBox = document.querySelector(".weather-box")
 let weatherDetails = document.querySelector(".weather-details")
 let Apikey = "1d973aff3aaa594d4640d69bfd7da005";
+input.onkeyup = (e)=>{
+if(e.key==="Enter"){
+  searchButton.click();
+}
+}
 searchButton.addEventListener("click", ()=>{
     let inputValue = input.value;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&units=metric&appid=${Apikey}`).then((response)=>{
