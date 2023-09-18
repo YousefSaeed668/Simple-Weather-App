@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="search-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <input class="search" type="text" placeholder="Enter Your Location">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="hidden not-found" >
+      <img src="/images/404.png">
+      <p>Oops! Invalid Loction :/</p>
+    </div>
+
+    <div class="weather-box">
+      <img src="images/cloud.png" >
+      <p class="temperature">25<span>°C</span></p>
+      <p class="description">Clear</p>
+    </div>
+
+    <div class="weather-details flex">
+      <div class="humidity flex">
+        <i class="fa-solid fa-water"></i>
+        <div class="text">
+          <span></span>
+          <p>Humidity</p>
+        </div>
+      </div>
+
+      <div class="wind flex">
+        <i class="fa-solid fa-wind"></i>
+        <div class="text">
+          <span></span>
+          <p>wind Speed</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
